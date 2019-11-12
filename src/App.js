@@ -8,7 +8,6 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Forecast />
-                <img src={require('./Icons/7.png')} />
             </div>
         );
     }

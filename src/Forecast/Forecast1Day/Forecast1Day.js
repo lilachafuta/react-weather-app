@@ -7,9 +7,9 @@ class Forecast1Day extends Component {
         return (
             <div className="Forecast1Day">
                 <h1>{days[this.props.day]}</h1>
-                <img src={require(`./src/Icons/${this.props.icon}.png`)} className="icon-weather" alt="weather"/>
+                <img src={require(`../../icons/${this.props.icon}.png`)} className="icon-weather" alt="weather"/>
                 <div className="weather-details">
-                    <div>{this.props.temp + ' º'}</div>
+                    <span className="weather-temperatura">{this.props.temp + 'º'}</span>
                     <span>{this.props.desc}</span>
                 </div>
             </div>

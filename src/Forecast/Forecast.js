@@ -20,15 +20,15 @@ class Forecast extends Component {
     render() {
         return (
             <div className="Forecast">
-                    {this.state.forecast.map(weather => {
-                        return <div>
-                            <Forecast1Day
-                                day={weather.day}
-                                icon={weather.icon}
-                                temp={weather.temperature}
-                                desc={weather.description}/>
-                        </div>
-                    })}
+                {this.state.forecast.map(weather => {
+                     return <div>
+                         <Forecast1Day
+                             day={weather.day}
+                             icon={weather.icon}
+                             temp={weather.temperature}
+                             desc={weather.description}/>
+                     </div>
+                })}
             </div>
         );
     }
